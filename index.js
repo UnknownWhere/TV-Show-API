@@ -48,7 +48,7 @@ if(cluster.isMaster) {
         });
 
         scope.on('error', function(err) {
-            console.trace(err);
+            console.log(err.stack.split("\n"));
         })
     }
 
