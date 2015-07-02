@@ -11,6 +11,7 @@ RegExp.escape = function(text) {
 	return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, "\\$&");
 };
 
+var options = {};
 mongoose.connect('mongodb://localhost/popcorn_tv_shows', options);
 // mongoose.connect('mongodb://' + config.dbHosts.join(',') + '/popcorn_shows', {
 // 	db: { native_parser: true },
