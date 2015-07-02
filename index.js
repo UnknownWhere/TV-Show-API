@@ -48,7 +48,7 @@ if(cluster.isMaster) {
         });
 
         scope.on('error', function(err) {
-            console.log("Error:", err);
+            console.log("Error Domain:", err);
         })
     }
 
