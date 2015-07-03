@@ -12,7 +12,7 @@ RegExp.escape = function(text) {
 };
 
 var options = {};
-mongoose.connect('mongodb://localhost/popcorn_tv_shows', options);
+mongoose.connect('mongodb://localhost/popcorn_tv_shows_kickass', options);
 // mongoose.connect('mongodb://' + config.dbHosts.join(',') + '/popcorn_shows', {
 // 	db: { native_parser: true },
 // 	replset: { 
