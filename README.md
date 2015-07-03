@@ -1,5 +1,6 @@
 # TV-Show-API
-Source of https://eztvapi.re 
+Source of https://eztvapi.re - This Project only for make this API work again with new TraktAPI
+Original Code : https://git.popcorntime.io/popcorntime/eztv-api
 
 Popcorn API
 =========
