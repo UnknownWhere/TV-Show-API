@@ -3,6 +3,7 @@ module.exports = {
 	port: 9001,
 	workers: 2,
 	scrapeTime: '00 00 3,15 * * *',
+	scrapeKickassTime: '00 30 * * * *',
 	scrapeTtl: 1000 * 60 * 60 * 10,
 	pageSize: 50,
 	dbHosts: [

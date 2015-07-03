@@ -39,6 +39,14 @@ if(cluster.isMaster) {
                     },
                     true
                 );
+                var jobKickass = new CronJob(config.scrapeKickassTime, 
+                    function(){
+                        helpers.update();
+                    }, function () {
+                        // This function is executed when the job stops
+                    },
+                    true
+                );
                 console.log("Cron job started");
             } catch(ex) {
                 console.log("Cron pattern not valid");
