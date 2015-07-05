@@ -23,6 +23,9 @@ module.exports = {
     if (req.params.page == 'all') {
 
       Show.find({num_seasons: { $gt: 0 }}).sort({ title: -1 }).exec(function (err, docs) {
+        if(err){
+          console.error(err);
+        }
         res.json(docs);
       });  
 
@@ -34,7 +37,7 @@ module.exports = {
       if (!data.order) 
       	data.order = -1;
       	
-      var sort = {"rating.votes":  data.order, "rating.percentage":  data.order}
+      var sort = {"rating":  data.order}
       // filter elements
 
       if (data.keywords) {
